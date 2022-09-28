@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* main color */
+.blue {
+    color: rgb(10, 102, 194);
+}
+
+/* navbar */
+#navLink {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* pointer */
+.pointer {
+    cursor: pointer;
+}
+
+#navLinkGrid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    border-left: 1px solid rgba(168, 168, 168, 0.557);
+}
+.myNav .bi {
+    font-size: 1.5em;
+}
+
+#mySearch {
+    background-color: rgb(238, 243, 248) !important;
+    padding-left: 50px;
+    content: icon;
+}
+
+.navImg {
+    border-radius: 50%;
+    height: 33px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.navImgDd {
+    border-radius: 50%;
+    height: 66px;
+    width: 66px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.navImgFeed {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 1px;
+}
+
+.myNav .bi-grid-3x3-gap-fill {
+    color: rgb(134, 134, 134) !important;
+    font-size: 1.4em;
+}
+
+#navbarScrollingDropdown {
+    padding: 2px;
+}
+
+.myForm {
+    position: relative;
+}
+.bi-search {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: rgb(90, 90, 90) !important;
+}
+
+/* Main User */
+
+.mainDiv {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.bg_image_container {
+    overflow: hidden;
+    height: 22vh;
+}
+
+.profilo_btn {
+    border-radius: 50px !important;
+}
+button.mx-2:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+.section_icon {
+    align-items: center;
+}
+
+.profile_foto_container {
+    overflow: hidden;
+    margin-top: -10%;
+    width: 30vw;
+}
+
+.myContainer {
+    width: 97% !important;
+    margin: auto !important;
+}
+
+.profile_foto {
+    justify-content: space-between;
+}
+
+.profile_foto_image {
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+
+.feedFooter {
+    font-size: 0.7em !important;
+}
+
+.element {
+    font-size: small;
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+    height: 100px;
+    border: 2px solid rgba(128, 128, 128, 0.355);
+}
+
+div.Carousel__ItemSet-sc-hyhecw-3:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+    background-color: rgba(128, 128, 128, 0.355);
+}
+
+.element p {
+    margin-bottom: 1px;
+}
+
+.feedFooter a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.feedFooter p {
+    line-height: 10px;
+}
+
+.immaginePost {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* modal */
+#myModal {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.myModal {
+    border: 1px solid rgba(168, 168, 168, 0.557);
+    padding: 20px;
+}
+.mHeader {
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mBottom {
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.modalImg {
+    padding: 5px;
+    border: 1px solid rgba(168, 168, 168, 0.557);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modalImg:hover {
+    box-shadow: 1px 3px 5px rgba(130, 130, 130, 0.665);
+}
+
+.myModal span {
+    cursor: pointer;
+}
+
+.myModal span:hover {
+    text-decoration: underline;
+}
+
+.modalDarkMode {
+    border-radius: 8px;
+}
+
+/* sidebar */
+
+.sideDiv {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.sideDiv a {
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+    display: block;
+    line-height: 2.5;
+}
+
+.sideDiv a:hover {
+    color: rgb(98, 98, 98);
+    text-decoration: underline;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.355);
+}
+
+.sideImg {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* feed */
+
+.feedProfileDivHead {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.feedProfileDiv {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    padding: 16px 16px 0px 16px;
+    font-size: 0.8em;
+    border-top: none;
+}
+
+.feedProfileDivBottom {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    border-top: none;
+    padding: 16px 16px 0px 16px;
+    margin-bottom: 10px;
+}
+
+.feedProfileDiv span {
+    color: rgb(10, 102, 194);
+    font-weight: bold;
+}
+
+.feedProfileDiv .p {
+    cursor: pointer;
+}
+
+.feedProfileDiv .p:hover {
+    background-color: rgba(182, 182, 182, 0.355);
+}
+
+.feedDiv {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.bg_image_feed {
+    position: relative;
+    height: 70px;
+}
+
+.feed_foto_image {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.main_feed_foto_image {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.bi-slash-square-fill {
+    color: rgb(231, 163, 62);
+}
+
+.feedProfileDiv b {
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+/* mainFeed */
+
+.newPostInput:hover {
+    background-color: rgba(192, 192, 192, 0.4);
+    cursor: pointer;
+}
+
+.bi-image {
+    color: rgb(10, 102, 194);
+}
+
+.bi-play-btn-fill {
+    color: rgb(95, 155, 65);
+}
+
+.mainFeedHover .bi-briefcase-fill {
+    color: rgb(168, 114, 232);
+}
+
+.bi-file-text-fill {
+    color: rgb(225, 103, 69);
+}
+
+.mainFeedHover:hover {
+    background-color: rgba(192, 192, 192, 0.4);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.userLink:hover {
+    color: rgb(0, 89, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* footerUser */
+.footerCol {
+    font-size: 0.8em;
+}
+
+.footerCol a:hover {
+    color: rgb(0, 89, 255) !important;
+    text-decoration: underline;
+}
+
+#nav-dropdown-dark-example {
+    padding: 0;
+    color: rgb(111, 111, 111);
+}
+
+.footerHover:hover {
+    color: rgb(0, 89, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* responsive */
+
+.feedProfileDivMedia {
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    display: none;
+}
+@media only screen and (max-width: 1400px) {
+    #navLink span {
+        display: none;
+    }
+    .mainFeedHover span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #displaySide {
+        display: none;
+    }
+    #mainWidth {
+        width: 100vw;
+    }
+    .feedProfileDivMedia {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .profile_foto_image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #mediaBtns {
+        font-size: 0.7em;
+        height: 70px;
+    }
+    #searchBar {
+        display: none !important;
+    }
+}
