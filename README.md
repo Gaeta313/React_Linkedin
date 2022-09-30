@@ -1,1 +1,1 @@
-# linkedin_clone
+# Clone di Linkdin realizzato in react
