@@ -1,29 +1,29 @@
 import { useEffect, useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { getExperienceAction, putExperienceAction, URL, TOKEN, setLoaderAction } from "../redux/action";
+import { putExperienceAction, URL, TOKEN, setLoaderAction } from "../redux/action";
 
 const FormEditExperience = (props) => {
     const dispatch = useDispatch();
-    const [currentExp, setCurrentExp] = useState({
+  /*   const [currentExp, setCurrentExp] = useState({
         role: "",
         company: "",
         startDate: "",
         endDate: "",
         description: "",
         area: "",
-    });
+    }); */
     const [file, setFile] = useState(null);
 
-    const [role, setRole] = useState(currentExp.role);
-    const [company, setCompany] = useState(currentExp.company);
-    const [startDate, setStartDate] = useState(currentExp.startDate);
-    const [endDate, setEndDate] = useState(currentExp.endDate);
-    const [description, setDescription] = useState(currentExp.description);
-    const [area, setArea] = useState(currentExp.area);
+    const [role, setRole] = useState("");
+    const [company, setCompany] = useState("");
+    const [startDate, setStartDate] = useState("");
+    const [endDate, setEndDate] = useState("");
+    const [description, setDescription] = useState("");
+    const [area, setArea] = useState("");
     const expId = useSelector((state) => state.main.user.expId);
     const me = useSelector((state) => state.main.user.me);
-    const singleExp = useSelector((state) => state.main.user.singleExp);
+   // const singleExp = useSelector((state) => state.main.user.singleExp);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -74,7 +74,7 @@ const FormEditExperience = (props) => {
             if (response.ok) {
                 let data = await response.json();
                 console.log(data);
-                setCurrentExp(data);
+                /* setCurrentExp(data); */
                 setRole(data.role);
                 setCompany(data.company);
                 setStartDate(data.startDate);
@@ -95,6 +95,7 @@ const FormEditExperience = (props) => {
     useEffect(() => {
         console.log(expId);
         func();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [expId]);
 
     return (
